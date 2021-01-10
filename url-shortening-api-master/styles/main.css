@@ -212,14 +212,13 @@ p {
   padding: 1rem 0;
 }
 
-.nav__link:hover:not(.cta) {
-  color: #3b3054;
-}
-
 @media screen and (min-width: 64rem) {
   .nav__link {
     opacity: 1;
     color: #9e9aa7;
+  }
+  .nav__link:hover:not(.cta) {
+    color: #3b3054;
   }
 }
 
