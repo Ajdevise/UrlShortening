@@ -91,11 +91,12 @@
         display: inline-block;
         padding: 1rem 0;
 
-        &:hover:not(.cta){
-            color: $color-dark-violet;
-        }
+        
 
         @media screen and (min-width: $bp-large) {
+            &:hover:not(.cta){
+                color: $color-dark-violet;
+            }
             opacity: 1;
             color: $color-grayish-violet; 
         }
