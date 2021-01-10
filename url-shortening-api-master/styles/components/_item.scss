@@ -1,0 +1,54 @@
+.item{
+    text-align: left;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    transform: translateY(-30%);
+    margin-bottom: 2rem;
+    
+    @media screen and (min-width: $bp-large){
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &__full-link{
+        
+        @media screen and (min-width: $bp-large){
+            margin-right: auto;
+        }
+    }
+
+    &__shortened-link{
+        color: $color-cyan;
+
+        @media screen and (min-width: $bp-large){
+            margin-right: 1rem;
+        }
+    }
+
+    hr{
+        color: rgba($color-gray, .25);
+        margin-left: -1rem;
+        margin-right: -1rem;
+
+        @media screen and (min-width: $bp-large){
+            display: none;
+        }
+    }
+
+    button{
+        width: 100%;
+        border-radius: 8px;
+        margin-top: .5rem;
+
+        &.copied{
+            background-color: $color-dark-blue;
+        }
+
+        @media screen and (min-width: $bp-large){
+            width: fit-content;
+            margin-top: 0;
+        }
+    }
+}

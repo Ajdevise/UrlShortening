@@ -1,0 +1,69 @@
+.card{
+    --margin-bottom: 6rem;
+    background-color: white;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    position: relative;
+    border-radius: 7px;
+
+    @media screen and (min-width: $bp-large){
+        text-align: left;
+        
+        &:nth-child(2){
+            transform: translateY(10%);
+        }
+
+        &:nth-child(3){
+            transform: translateY(20%);
+        }
+    }
+
+    &:not(:last-child){
+        margin-bottom: var(--margin-bottom);
+
+        @media screen and (min-width: $bp-large){
+            margin-bottom: 0;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: .5rem;
+            height: var(--margin-bottom);
+            background-color: $color-cyan;
+            transform: translate(-50%, 100%);
+
+            @media screen and (min-width: $bp-large){
+                height: .5rem;
+                width: 2rem; //grid gap width
+                top: 50%;
+                left: 100%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__logo{
+        background-color: $color-dark-blue;
+        width: fit-content;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        @include center;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        
+        @media screen and (min-width: $bp-large){
+            margin: 0 0;
+        }
+    }
+
+    &__img{
+        width: 2rem;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+}

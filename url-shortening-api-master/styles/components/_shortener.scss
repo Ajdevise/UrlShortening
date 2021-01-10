@@ -1,0 +1,58 @@
+.shortener{
+    --border-radius: 7px;
+    background-color: $color-dark-violet;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-image: url("/images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transform: translateY(-50%);
+    text-align: left;
+    
+    @media screen and (min-width: $bp-large) {
+        background-image: url("/images/bg-shorten-desktop.svg");   
+        background-position: 0% 0%; 
+        background-size: cover;   
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr max-content;
+        grid-gap: 1rem;
+        padding: 2rem;
+    }
+
+    input{
+        border-radius: var(--border-radius);
+        width: 100%;
+        @media screen and (min-width: $bp-large) {
+            width: 100%;
+        }
+    }
+
+    button{
+        width: 100%;
+        border-radius: var(--border-radius);
+        margin-top: 1rem;
+
+        @media screen and (min-width: $bp-large) {
+            width: fit-content;
+            margin-top: 0;
+        }
+    }
+
+    label{
+        color: red;
+        font-size: .7rem;
+        display: none;
+        @media screen and (min-width: $bp-large){
+            grid-row: 2 / 3;
+        }
+    }
+
+    label.error{
+        display: inline;
+    }
+
+    input.error{
+        border: 1px solid red;
+    }
+}

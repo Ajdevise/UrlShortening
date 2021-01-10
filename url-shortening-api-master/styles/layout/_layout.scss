@@ -1,0 +1,22 @@
+.container{
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.benefits{
+    @media screen and (min-width: $bp-large){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.footer__grid{
+    @media screen and (min-width: $bp-large){
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2rem;
+        align-items: baseline;
+    }
+}

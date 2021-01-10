@@ -1,0 +1,54 @@
+.hero{
+    margin-bottom: 8rem;
+}
+
+.advanced-stats{
+    background-color: $color-grayish-blue;
+    text-align: center;
+    padding-bottom: 6rem;
+
+    @media screen and (min-width: $bp-large){
+        padding-bottom: 8rem;
+    }
+
+    .benefits{
+        margin-top: 5rem;
+    }
+
+    h2{
+        margin-top: 4rem;
+    }
+
+    .p{
+        @media screen and (min-width: $bp-large){
+            width: 30rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+.boost-links{
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: $color-dark-violet;
+    background-image: url("/images/bg-boost-mobile.svg");
+    background-size: cover;
+    
+    @media screen and (min-width: $bp-large){
+        background-image: url("/images/bg-boost-desktop.svg");
+    }
+
+    h2{
+        color: white;
+    }
+}
+
+.footer{
+    padding: 2rem;
+    text-align: center;
+    background-color: $color-dark-blue;
+    
+    @media screen and (min-width: $bp-large){
+       text-align: left;
+    }
+}

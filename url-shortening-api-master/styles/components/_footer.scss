@@ -1,0 +1,59 @@
+.footer{
+    color: $color-gray;
+    
+    h2,
+    h4{
+        color: white;
+    }
+
+    h4{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+
+        @media screen and (min-width: $bp-large){
+            margin-top: 0;
+        }
+    }
+
+    &__links{
+        display: inline-block;
+        padding: .3rem 0;
+        transition: color .2s;
+
+        &:hover{
+            color: $color-cyan;
+        }
+    }
+
+    &__social{
+        margin-top: 2rem;
+
+    }
+
+    &__logo{
+        @media screen and (min-width: $bp-large){
+            margin-top: 0;
+        }
+    }
+
+    &__icon{
+        display: inline-block;
+        cursor: pointer;
+        
+        @media screen and (min-width: $bp-large){
+            width: .8rem;
+        }
+
+        @media screen and (min-width: $bp-larger){
+            width: 1.2rem; 
+        }
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+
+        &:hover svg path{
+            fill: $color-cyan;
+        }
+    }
+}
